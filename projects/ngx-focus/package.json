@@ -1,6 +1,6 @@
 {
   "name": "ngx-focus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple focus directive to be used with Angular, useful when you showing and hiding filed multiple times with *ngIf",
   "author": "Miloš Brdar",
   "repository": {
