@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Build ngx-focus ling
 
-Run `ng build focus`
+Run `ng run build:lib`
 
 ## Publish to npm
 
