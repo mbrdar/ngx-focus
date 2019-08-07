@@ -52,7 +52,7 @@ imports: [NgxFocusModule,...]
 Add directive to your page:
 ```
 
-<input ngxFocus">
+<input ngxFocus>
 
 
 ```
