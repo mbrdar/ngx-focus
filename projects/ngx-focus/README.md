@@ -14,7 +14,7 @@ Focus directive.
 
 
 
-ngx-focus contains a angular directive. Directive can be applied to input field in order for that field to be in focus.
+ngx-focus contains a angular directive. Directive can be applied to a DOM element in order to focus it conditionally.
 Very useful when you are using field in combination with *ngIf.
 
 
@@ -64,8 +64,7 @@ with condition:
 ```
 
 ### Inputs
-`ngxFocus`
-boolean flag that indicates will filed will be focused or not, default is true`
+`ngxFocus` Indicates that element should be focused or not, default is `true`
 
 ### Outputs
 `fieldFocused`

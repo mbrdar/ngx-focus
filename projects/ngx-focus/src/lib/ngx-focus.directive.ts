@@ -5,8 +5,12 @@ import {ChangeDetectorRef, Directive, ElementRef, EventEmitter, Input, OnInit, O
 })
 export class NgxFocusDirective implements OnInit {
 
+  private _condition = true;
+
   @Input('ngxFocus')
-  condition = true;
+  set condition(value: string | boolean) {
+    this._condition = typeof value === 'boolean' ? value : true;
+  }
 
   @Output()
   fieldFocused = new EventEmitter<boolean>();
@@ -15,7 +19,7 @@ export class NgxFocusDirective implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.condition) {
+    if (this._condition) {
       this.cdr.detectChanges();
       this.elementRef.nativeElement.focus();
       this.fieldFocused.emit();
