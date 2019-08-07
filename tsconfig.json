@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-focus": [
+        "dist/ngx-focus"
+      ],
+      "ngx-focus/*": [
+        "dist/ngx-focus/*"
+      ]
+    }
   }
 }

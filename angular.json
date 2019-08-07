@@ -129,6 +129,41 @@
           }
         }
       }
+    },
+    "ngx-focus": {
+      "root": "projects/ngx-focus",
+      "sourceRoot": "projects/ngx-focus/src",
+      "projectType": "library",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-focus/tsconfig.lib.json",
+            "project": "projects/ngx-focus/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-focus/src/test.ts",
+            "tsConfig": "projects/ngx-focus/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-focus/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-focus/tsconfig.lib.json",
+              "projects/ngx-focus/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-focus-lib"
