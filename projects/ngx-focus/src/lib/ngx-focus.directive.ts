@@ -6,7 +6,7 @@ import {ChangeDetectorRef, Directive, ElementRef, EventEmitter, Input, OnInit, O
 export class NgxFocusDirective implements OnInit {
 
   @Input('ngxFocus')
-  condition: boolean;
+  condition = true;
 
   @Output()
   fieldFocused = new EventEmitter<boolean>();
